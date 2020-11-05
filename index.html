@@ -10,14 +10,21 @@
 
     </head>
     <body>
+      
+      <!--Nav Bar-->
+  
+ 
       <div class="topnav" id="myTopnav">
-        <a>ABOUT</a>
+        <a href="#about" style="text-decoration: none; color: white;">ABOUT</a>
         <a>GLOSSARY</a>
         <a>TIPS</a>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
           <i class="fa fa-bars"></i>
         </a>
       </div>
+   
+    
+      <!-- java for collapsable nav bar -->
       <script>
         function myFunction() {
           var x = document.getElementById("myTopnav");
@@ -28,44 +35,53 @@
           }
         }
         </script>
- 
-      <!--
-     <div class="Navbar">
-        <div class="Navbar__Link Navbar__Link-toggle">
-          <i class="fas fa-bars"></i>
-         </div>
-       <nav class="Navbar__Items">
-         <div class="Navbar__Link">
-           ABOUT
-         </div>
-         <div class="Navbar__Link">
-           GLOSSARY
-         </div>
-         <div class="Navbar__Link">
-           TIPS
-         </div>
-       </nav>
-       -->
+        
+        <!-- back to top button -->
+      <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
-             <!--
-      <div class="container">
-            <nav>
-                <ul class='nav-bar'>
-                  <li style="display: inline;">        
-                    <a class='nav-item'>ABOUT</a>
-                  </li>
-                  <li style="display: inline;">        
-                    <a class='nav-item' >GLOSSARY</a>
-                  </li>
-                  <li style="display: inline;">        
-                    <a class='nav-item'>TIPS</a>
-                  </li>
-                </ul>
-              </nav>
+        <!-- java for back to top button -->
+        <script>
+         var mybutton = document.getElementById("myBtn");
+           window.onscroll = function() {scrollFunction()};
+          function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+              mybutton.style.display = "block";
+            } else {
+              mybutton.style.display = "none";
+            }
+          }
+          function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+          }
+          </script>
+          
+      
+      <!--Header with Logo-->
+       <div class="container">
+      <img src="./css/img/plant-header.jpg" alt="plants" class="responsive" style="margin-top: 40px; max-width: 100%; height: auto;">
+    </div>
+     
+    <div class="row">      
+    <a name="about">
+      <h1 class="header">WELCOME TO THE NURSERY</h1>
+    </a>
+    </div>
+          
+      <div class="row">
+        <div class="col-md-8">
+          <div class="box">We are a botanical glossary that offers information 
+           on a wide variety of plant species. Whether you're 
+           looking for plant care advice, new plant inspiration,
+           or are just curious about all things flora, our free
+           data source offers answers to satisfy all plant lovers.
+      </div>
+
         </div>
-      --> 
-    
-  
+        </div>  
+        
+
+        
      
 
         <script src='/scripts/jquery-3.5.1.min.js'></script>
