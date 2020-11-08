@@ -1,4 +1,4 @@
-/* Styles and adds Responsiveness to the Nav Bar */
+/* Styles the Nav Bar */
 .topnav {
   overflow: hidden;
   background-color: #A0CB72;
@@ -58,8 +58,28 @@
   color:#A0CB72; 
 }
 
-/* Makes nav bar Responsive */
+/* Back to top button responsiveness */
+@media screen and (max-width: 600px) {
+  #myBtn {
+    display: none;
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+    z-index: 99;
+    font-size: 10px;
+    border: none;
+    outline: none;
+    background-color: #A0CB72;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 4px;
+    font-family: 'montserrat-light';
+  }
 
+}
+
+/* Makes nav bar Responsive */
 @media screen and (max-width: 600px) {
   .topnav a {display: none;}
   .topnav a.icon {
@@ -86,14 +106,15 @@
 }
 /* makes the top image responsive */
 .responsive {
-  width: 100%;
+  max-width: 100%;
   height: auto;
   z-index: 0;
   background-position: center;
+  justify-content: center;
 }
 
 
-/* styles and makes the <h1> above the first <p> responsive */
+/* styles and makes headers responsive */
 .header{
   width: 100%;
   height: auto;
@@ -108,6 +129,8 @@
     width: 100;
     height: auto;
     font-size: medium;
+    padding-top: 40px;
+    padding-bottom: -5px;
   }
 }
 
@@ -116,9 +139,10 @@
   flex-wrap: wrap;
   text-align: center;
   justify-content: center;
-  width: 100%;
+  max-width: 100%;
+  
 }
-
+/* styles and makes paragraphs responsive */
 .box{
   font-family: 'montserrat-light';
   text-align: center;
@@ -133,5 +157,72 @@
     padding-right: 20px;
   }
 }
+
+/* styles the input and search bar */
+.label{
+  width: 100;
+  height: auto;
+  font-size: large;
+  padding-left: 20px;
+  padding-right: 5px;
+  justify-content: center;
+  padding: 10px;
+  line-height: 20px;
+
+}
+
+#search{
+  width: 50%;
+  justify-content: center;
+  margin-right:10px;
+  margin-left: 10px;
+  border-radius: 4px;
+  height: 40px;
+
+}
+
+#submit{
+  width: 100;
+  height: auto;
+  font-size: medium;
+  border-radius: 4px;
+  padding: 10px;
+  height: 40px;
+}
+
+/* Makes the input and search bar responsive */
+
+@media screen and (max-width: 600px){
+  .label{
+    width: 100;
+    height: auto;
+    font-size: small;
+    padding-left: 20px;
+    padding-right: 5px;
+    justify-content: center;
+    line-height: 10px;
+    
+  }
+
+  #search{
+    width: 50%;
+    justify-content: center;
+    margin-right:10px;
+    margin-left: 10px;
+    border-radius: 4px;
+    height: 30px;
+
+}
+
+  #submit{
+    text-align: center;
+    vertical-align: middle;
+    font-size: 10px;
+    border-radius: 4px;
+    height: 30px;
+    line-height: 10px;
+  }
+}
+
 
 

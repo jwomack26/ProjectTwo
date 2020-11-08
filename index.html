@@ -16,7 +16,7 @@
  
       <div class="topnav" id="myTopnav">
         <a href="#about" style="text-decoration: none; color: white;">ABOUT</a>
-        <a>GLOSSARY</a>
+        <a href="#glossary" style="text-decoration: none; color: white;">GLOSSARY</a>
         <a>TIPS</a>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
           <i class="fa fa-bars"></i>
@@ -59,10 +59,10 @@
       
       <!--Header with Logo-->
        <div class="container">
-      <img src="./css/img/plant-header.jpg" alt="plants" class="responsive" style="margin-top: 40px; max-width: 100%; height: auto;">
+      <img src="./css/img/plant-header.jpg" alt="plants" class="responsive" style="max-width: 100%; height: auto; margin-top: 40px;">
     </div>
      
-    <div class="row">      
+    <div class="col-md-12">      
     <a name="about">
       <h1 class="header">WELCOME TO THE NURSERY</h1>
     </a>
@@ -78,7 +78,23 @@
       </div>
 
         </div>
-        </div>  
+        </div> 
+
+        <div class="col-md-12" style="background-color: #EAE7D6; margin-top: 40px; justify-content: center;">
+          <a name="glossary">
+            <h1 class="header">GLOSSARY</h1>
+            <div class="box">Type in the name of the plant you'd like to search. You can search by their common or scientific name.</div>
+                       
+            <!-- Search Bar-->
+            <div class="row" style="padding-top: 40px;">
+            <label class="label" for="search" style="font-family: montserrat-light;">SEARCH:</label>
+            <input id="search" type="search" style="border-style: none;">
+            <button id="submit" style="font-family: montserrat-light; background-color: #A0CB72; color: white; border-style: none;">SUBMIT</button>
+          </div>
+          </a>
+        </div>
+      
+      
         
 
         
