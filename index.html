@@ -9,15 +9,14 @@
        <script src="https://kit.fontawesome.com/3cc2f12c5a.js" crossorigin="anonymous"></script>
 
     </head>
-    <body>
+    <body style="background-color: #58595b;">
       
       <!--Nav Bar-->
   
  
       <div class="topnav" id="myTopnav">
-        <a href="#about" style="text-decoration: none; color: white;">ABOUT</a>
-        <a href="#glossary" style="text-decoration: none; color: white;">GLOSSARY</a>
-        <a>TIPS</a>
+        <a href="#about" style="text-decoration: none; ">ABOUT</a>
+        <a href="#generator" style="text-decoration: none;">GENERATOR</a>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
           <i class="fa fa-bars"></i>
         </a>
@@ -59,37 +58,37 @@
       
       <!--Header with Logo-->
        <div class="container">
-      <img src="./css/img/plant-header.jpg" alt="plants" class="responsive" style="max-width: 100%; height: auto; margin-top: 40px;">
+      <img src="./css/img/GiphGeneratorLogo.png" alt="logo" class="responsive" style="max-width: 100%; height: auto; margin-top: 40px;">
     </div>
      
-    <div class="col-md-12">      
+    <div class="col-md-12" style="margin-top: 20px;">      
     <a name="about">
-      <h1 class="header">WELCOME TO THE NURSERY</h1>
+      <h1 class="header">WELCOME TO GIPH GENERATOR</h1>
     </a>
     </div>
           
       <div class="row">
         <div class="col-md-8">
-          <div class="box">We are a botanical glossary that offers information 
-           on a wide variety of plant species. Whether you're 
-           looking for plant care advice, new plant inspiration,
-           or are just curious about all things flora, our free
-           data source offers answers to satisfy all plant lovers.
+          <div class="box">Giph Generator is a small program that allows
+            users to type in a keyword and receive a random, generated giph
+            related to that keyword.
       </div>
 
         </div>
         </div> 
 
-        <div class="col-md-12" style="background-color: #EAE7D6; margin-top: 40px; justify-content: center;">
-          <a name="glossary">
-            <h1 class="header">GLOSSARY</h1>
-            <div class="box">Type in the name of the plant you'd like to search. You can search by their common or scientific name.</div>
+        <div class="col-md-12" style="margin-top: 20px; justify-content: center;">
+          <a name="generator">
+            <h1 class="header">GENERATOR</h1>
+            <div class="box">Type in any keyword to generate a related giph. This can be related
+              to anything you'd like from sports, fashion, celebrities, tv shows, movies, and more!
+            </div>
                        
             <!-- Search Bar-->
             <div class="row" style="padding-top: 40px;">
-            <label class="label" for="search" style="font-family: montserrat-light;">SEARCH:</label>
+            <label class="label" for="search" style="font-family: montserrat-light; color: white;">SEARCH:</label>
             <input id="input" type="input" style="border-style: none;" autocomplete="off">
-            <button id="submit" onclick="search()" style="font-family: montserrat-light; background-color: #A0CB72; color: white; border-style: none;">SUBMIT</button>
+            <button id="submit" onclick="search()" style="font-family: montserrat-light; background-color:#feda00; color:#58595b; border-style: none;">SUBMIT</button>
           </div>
           <div id="img" class="container">
         </a>
