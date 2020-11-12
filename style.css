@@ -20,7 +20,9 @@
   font-size: 17px;
   background-color: #feda00;
 }
-
+.topnav a:hover{
+  color: white;
+}
 
 .topnav a.active {
   background-color: #feda00;
@@ -50,7 +52,7 @@
   cursor: pointer;
   padding: 15px;
   border-radius: 4px;
-  font-family: 'montserrat-light';
+  font-family: 'montserrat-bold';
 }
 
 #myBtn:hover {
@@ -111,14 +113,14 @@
   z-index: 0;
   background-position: center;
   justify-content: center;
-}
+} 
 
 
 /* styles and makes headers responsive */
 .header{
   width: 100%;
   height: auto;
-  font-family: 'montserrat-bold';
+  font-family: 'montserrat-light';
   text-align: center;
   padding-top: 70px;
   color: #feda00;
