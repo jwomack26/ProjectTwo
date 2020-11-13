@@ -5,7 +5,7 @@
         <link rel='stylesheet' href='./style.css'>
         <link rel='stylesheet' href='./css/styles/bootstrap.min.css'>
         <script src='./js/scripts/main.js'></script>
-      
+        <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet" />
        <script src="https://kit.fontawesome.com/3cc2f12c5a.js" crossorigin="anonymous"></script>
 
     </head>
@@ -70,7 +70,7 @@
       <div class="row">
         <div class="col-md-8">
           <div class="box">Giph Generator is a small program that allows
-            users to type in a keyword and receive a random, generated giph
+            users to type in a keyword and receive random, generated giphs
             related to that keyword.
       </div>
 
@@ -80,7 +80,7 @@
         <div class="col-md-12" style="margin-top: 20px; justify-content: center;">
           <a name="generator">
             <h1 class="header">GENERATOR</h1>
-            <div class="box" >Type in any keyword to generate a related giph. This can be related
+            <div class="box" >Type in any keyword to generate related giphs. This can be related
               to anything you'd like from sports, fashion, celebrities, tv shows, movies, and more!
             </div>
                        
@@ -90,9 +90,9 @@
             <input id="input" type="input" style="border-style: none;" autocomplete="off">
             <button id="submit" onclick="search()" style="font-family: montserrat-bold; background-color:#feda00; color:#58595b; border-style: none;">SUBMIT</button>
           </div>
-          <div id="img" class="container">
+          <div id="img" class="grid grid-cols-8 gap-4" style="padding-top: 40px;"></div>
         </a>
-        </div>
+        
       <script src='./js/scripts/jquery-3.5.1.min.js'></script>
         <script src='./js/scripts/bootstrap.min.js'></script>
     </body>
